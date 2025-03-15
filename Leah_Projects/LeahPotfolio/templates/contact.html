@@ -1,0 +1,123 @@
+
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block body %}
+
+
+    <!-- Page Title -->
+<div class="page-title" data-aos="fade">
+  <div class="heading">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1>Get In Touch</h1>
+          <p class="mb-0">I value your questions, feedback, and thoughts. Let's connect and make things happen together!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current">Contact Us</li>
+      </ol>
+    </div>
+  </nav>
+</div>
+<!-- End Page Title -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-md-6">
+        <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+          <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Our Office</h3>
+            <p>Essy Properties, Nairobi, Kenya</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+          <i class="icon bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p>+254 703649272</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+          <i class="icon bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p>lishyamuchiri@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+          <i class="icon bi bi-share flex-shrink-0"></i>
+          <div>
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="https://github.com/lishyamuchiri"><i class="bi bi-github"></i></a>
+                <a href="linkedin.com/in/lishya-muchiri-849b91268"><i class="bi bi-linkedin"></i></a>
+              <a href=" https://www.facebook.com/share/Cata9W3QGJE9qimY/"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <form method="post" >
+        {% csrf_token %}
+      <div class="row gy-4">
+
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control is-invalid" placeholder="Your Full Name" required>
+        </div>
+
+        <div class="col-md-6">
+          <input type="email" class="form-control is-invalid" name="email" placeholder="Your Email Address" required>
+        </div>
+
+        <div class="col-md-12">
+          <input type="text" class="form-control is-invalid"  name="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="col-md-12">
+          <textarea class="form-control" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <div class="col-md-12 text-center">
+          <div class="loading"></div>
+          <div class="error-message"></div>
+          <div class="sent-message"></div>
+          <button type="submit" class="btn btn-outline-success">Send Message</button>
+        </div>
+
+      </div>
+    </form>
+    <!-- End Contact Form -->
+
+  </div>
+
+</section>
+<!-- End Contact Section -->
+
+
+
+  {% endblock %}

@@ -1,0 +1,135 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block body %}
+
+ <!-- Page Title -->
+<div class="page-title" data-aos="fade">
+  <div class="heading">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1>Portfolio</h1>
+          <p class="mb-0">Welcome to my portfolio, where I showcase my diverse web development and graphic design projects. From app development to branding and real estate websites, here you'll find the projects that represent my skills and passion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current">Portfolio</li>
+      </ol>
+    </div>
+  </nav>
+</div><!-- End Page Title -->
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <!-- Portfolio Filters -->
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">Sample projects</li>
+
+      </ul><!-- End Portfolio Filters -->
+
+      <!-- Portfolio Heading (instead of filter) -->
+
+
+      <!-- Portfolio Items -->
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200" >
+
+        <!-- App Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/restaurant.png' %}" class="img-fluid" alt="" style="width: 1024px; height: 200px">
+            <div class="portfolio-info">
+              <h4>Restaurant</h4>
+              <p style="color: #18d16e;text-shadow: 2px 3px 4px black">A beautifully designed website for a local restaurant </p>
+              <a href="{% static 'assets/restaurant.png' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"  style="width: 1024px; height: 200px"><i class="bi bi-zoom-in"></i></a>
+
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Product Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/propertiees.png' %}" class="img-fluid" alt="" style="width: 1024px; height: 200px">
+            <div class="portfolio-info">
+              <h4>Essy Properties</h4>
+              <p style="color: #18d16e;text-shadow: 2px 3px 4px black">A real estate website designed for Essy Properties</p>
+              <a href="{% static 'assets/propertiees.png' %}" title="sample project" data-gallery="portfolio-gallery-product" class="glightbox preview-link" style="width: 1024px; height: 200px"><i class="bi bi-zoom-in"></i></a>
+
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Branding Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/medisync.png' %}" class="img-fluid" alt="" style="width: 1024px; height: 200px">
+            <div class="portfolio-info">
+              <h4>Medisync</h4>
+              <p style="color: #18d16e;text-shadow: 2px 3px 4px black">Branding for Medisync by use of django, a health-tech company </p>
+              <a href="{% static 'assets/medisync.png' %}" title="sample project" data-gallery="portfolio-gallery-branding" class="glightbox preview-link" style="width: 1024px; height: 200px"><i class="bi bi-zoom-in"></i></a>
+
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Books Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/potfoli.png' %}" class="img-fluid" alt="" style="width: 1024px; height: 200px">
+            <div class="portfolio-info">
+              <h4>Potfolio</h4>
+              <p style="color: #18d16e;text-shadow: 2px 3px 4px black">A sample of potfolio website to show case my friends skills.</p>
+              <a href="{% static 'assets/potfoli.png' %}" title="sample project" data-gallery="portfolio-gallery-book" class="glightbox preview-link" style="width: 1024px; height: 200px"><i class="bi bi-zoom-in"></i></a>
+
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+           <!-- Books Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/project1.png' %}" class="img-fluid" alt="" style="width: 1024px; height: 200px">
+            <div class="portfolio-info">
+              <h4>VoyajeVista</h4>
+              <p style="color: #18d16e;text-shadow: 2px 3px 4px black">I developed a travel website that helps users discover new destinations and plan trips</p>
+              <a href="{% static 'assets/project1.png' %}" title="sample project" data-gallery="portfolio-gallery-book" class="glightbox preview-link" style="width: 1024px; height: 200px"> <i class="bi bi-zoom-in"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+           <!-- Books Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/birtsample.png' %}" class="img-fluid h-20"  alt="" style="width: 1024px; height: 200px">
+            <div class="portfolio-info">
+              <h4>Birthday Post</h4>
+              <p style="color: #18d16e;text-shadow: 2px 3px 4px black">A customized birthday post created for social media</p>
+              <a href="{% static 'assets/birtsample.png' %}" title="sampl project" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in" style="width: 1024px; height: 200px"></i></a>
+
+            </div>
+          </div>
+        </div><
+
+        <!-- Additional items go here -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+  </div>
+</section><!-- End Portfolio Section -->
+
+
+
+
+
+
+{% endblock %}

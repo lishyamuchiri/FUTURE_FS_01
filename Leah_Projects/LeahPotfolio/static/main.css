@@ -1,0 +1,172 @@
+/* General Body Style */
+body {
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Remove underlines for links */
+a {
+    text-decoration: none;
+    color: #2389c3; /* Match the theme color */
+}
+
+/* Form Container */
+form {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to stack on smaller screens */
+    justify-content: space-between; /* Space between #legend and #details */
+    align-items: flex-start; /* Align items vertically */
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1000px; /* Limit form width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Centered and Themed Heading */
+h1 {
+    color: #2389c3;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Roboto Light";
+    text-shadow: 3px 3px 10px rgb(220, 214, 214);
+}
+
+/* Legend Section */
+#legend {
+    width: 50%;
+    height: 50%; /*
+    flex: 1; /* Share equal space with #details */
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#legend img {
+    width: 100%; /* Scale image responsibly */
+    max-width: 500px ;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#legend p {
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Input and Button Styles */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px; /* Standardize textarea size */
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block; /* Center the button */
+    border: none;
+    border-radius: 5px;
+    background-color: #2389c3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Details Section */
+#details {
+    flex: 1; /* Share equal space with #legend */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    form {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+
+    #legend, #details {
+        flex: none;
+        width: 100%;
+
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+#links-container {
+    justify-content: right;     /* Center the links horizontally */
+  gap: 22px;
+
+}
+
+#links{
+  text-decoration: none;       /* Removes underline from links */
+  color: #333;                 /* Set text color */
+  font-size: 20px;             /* Adjust font size */
+}
+
+
+#links-container a:hover {
+  color: #007bff;              /* Change color on hover (optional) */
+}
+
+.blurred-background {
+  background-image: url('your-image.jpg'); /* Replace with your background image */
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.blurred-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); /* Add white overlay for better effect */
+  backdrop-filter: blur(10px); /* Blur effect */
+  z-index: 1;
+}
+
+.blurred-background .content {
+  position: relative;
+  z-index: 2;
+  color: #000; /* Adjust text color */
+  padding: 20px;
+}
+
+
+
