@@ -7,17 +7,17 @@ Welcome to my **All-Projects** repository! This repo contains some of my key pro
 ### 1️⃣ Portfolio Website 🌐  
 - **Description:** A personal portfolio showcasing my skills, projects, and experience.  
 - **Technologies:** HTML, CSS, JavaScript, Django  
-- **Repo:** [Portfolio Repo](https://github.com/lishyamuchiri/LeahPotfolio)  
+- **Repo:** [Portfolio Repo](https://github.com/lishyamuchiri/FUTURE_FS_01/tree/master/Leah_Projects/LeahPotfolio)  
 
 ### 2️⃣ Weather App ⛅  
 - **Description:** A web app that provides real-time weather updates.  
 - **Technologies:** React, OpenWeather API  
-- **Repo:** [Weather App Repo](https://github.com/lishyamuchiri/weather-app)  
+- **Repo:** [Weather App Repo](https://github.com/lishyamuchiri/FUTURE_FS_01/tree/master/Leah_Projects/weatherApp)  
 
 ### 3️⃣ Food Delivery App 🍕  
 - **Description:** A food ordering platform with menu browsing and cart functionality.  
 - **Technologies:** Django, Bootstrap, JavaScript  
-- **Repo:** [Food Delivery Repo](https://github.com/lishyamuchiri/food-delivery)  
+- **Repo:** [Food Delivery Repo](https://github.com/lishyamuchiri/FUTURE_FS_01/tree/master/Leah_Projects/fastfood-delivery)  
 
 ---
 
